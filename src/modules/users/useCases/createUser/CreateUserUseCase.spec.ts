@@ -34,7 +34,7 @@ describe("Create a user", () => {
     }).rejects.toBeInstanceOf(AppError);
   });
 
-  it("should be able to assign an id to a user", async () => {
+  it("should be able to assign an id to an user", async () => {
     const user = await createUserUseCase.execute({
       name: "Test User",
       email: "test@example.com",

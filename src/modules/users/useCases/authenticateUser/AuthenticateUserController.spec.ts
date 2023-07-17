@@ -9,7 +9,7 @@ require("dotenv").config();
 
 let connection: Connection;
 
-describe("Create User Controller", () => {
+describe("Authenticate User Controller", () => {
   beforeAll(async () => {
     auth.jwt.secret = process.env.JWT_SECRET;
     connection = await createConnection();
